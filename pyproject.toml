@@ -1,0 +1,19 @@
+[project]
+name = "vpngatech"
+version = "0.1.0"
+description = "TUI for logging into the Georgia Tech GlobalProtect VPN"
+readme = "README.md"
+authors = [
+    { name = "Steve Travis" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "textual>=8.2.8",
+]
+
+[project.scripts]
+vpngatech = "vpngatech:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.14.0"]
+build-backend = "uv_build"
